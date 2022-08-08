@@ -15,7 +15,7 @@ const CarsAdmin = () => {
     useEffect(() => {
         dispatch(getCar())
     }, [])
-
+//dekmdkeldsm,
 
     const deleteItem = (id) => {
         dispatch(deleteCar(id))
