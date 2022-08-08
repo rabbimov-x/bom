@@ -1,0 +1,121 @@
+.globalImg{
+    width: 100%;
+    position: relative;
+    .carImg{
+        width: 100%;
+        height: auto;
+    }
+    .anim1{
+        animation-name: anim1;
+    }
+    .anim2{
+        animation-name: anim2;
+    }
+    .anim3{
+        animation-name: anim3;
+        animation-duration: 1.25s !important;
+        animation-timing-function: ease-in-out;
+    }
+    .anim4{
+        animation-name: anim4;
+        animation-duration: 1.25s !important;
+        animation-timing-function: ease-in-out;
+    }
+    .imgcontent{
+            animation-duration: 1.3s;
+            animation-timing-function: ease-in-out;
+            width: 9.45vw;
+            height: 9.45vw;
+            position: absolute;
+            bottom: 7.2%;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        .diskImg1{
+            // position: relative;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .imgleft{
+        left: 12.4%;
+    }
+    .imgright{
+        right: 14.9% !important;
+    }
+}
+.W212{
+    .imgcontent{
+        bottom: 9%; 
+    }
+    .imgleft{
+        left: 8.8%;
+    }
+    .imgright{
+        right: 16.7% !important;
+    }
+}
+.Scoda{
+    
+}
+.Xiaopeng{
+    .imgcontent{
+     bottom: 9.9%;  
+     width: 9.85vw;
+     height: 9.85vw; 
+    }
+    .imgleft{
+        left: 16.3%;
+    }
+    .imgright{
+        right: 15.1% !important;
+    }
+}
+.Malibu{
+    .imgcontent{
+        bottom: 7.7%;
+    }
+    .imgleft{
+        left: 12.1%;
+    }
+    .imgright{
+        bottom: 6.6%;
+        right: 16.5% !important;
+    }
+}
+.Kia{
+    .imgcontent{
+        bottom: 7%;
+    }
+    .imgleft{
+    left: 11.7%;
+}
+.imgright{
+    right: 15.7% !important;
+}
+    
+}
+
+@keyframes anim1 {
+    
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes anim2 {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes anim3 {
+    
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes anim4 {
+    100%{
+        transform: rotate(360deg);
+    }
+}

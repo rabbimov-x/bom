@@ -1,0 +1,116 @@
+.footer{
+    width: 100%;
+    padding: 40px 5%  0px 5%;
+    background-color: var(--black);
+    display: flex;
+    flex-wrap: wrap;
+
+    .contentItem{
+        margin: 0px 0;
+        width: 100%;
+        padding: 18px 5px 18px 0;
+        border-bottom: 1px solid #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        stroke: #fff;
+        .itemImg{
+            width: 24px;
+            min-height: 24px;
+        }
+    }
+    .logo{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #fff;
+        justify-content: center;
+        padding: 10px 0 40px 0;
+        &> img{
+            width: 15vw;
+        }
+        @media (max-width: 767px) {
+            padding: 0px 0 30px 0 !important;
+        }
+    }
+    .ulMenu{
+        list-style: none;
+        margin: 0;
+        margin-left: -15px;
+        padding: 0;
+    
+        &> li{
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+        color: var(--shade-1);
+        margin-right: 40px;
+        font-family: var(--family);
+        font-weight: 700;
+        font-size: var(--size14);
+        line-height: 145%;
+        cursor: pointer;
+
+        &> a {
+            width: 100%;
+        }
+        }
+    
+    }
+    .titlebtn{
+        display: flex;
+        border: 1px solid #fff;
+        width: 236px;
+        height: 54px;
+        background: #000;
+        align-items: center;
+        color: #fff;
+        font-size: var(--size14);
+        line-height: 120%;
+        padding: 22px 36px 22px 21px;
+        justify-content: space-between;
+        cursor: pointer;
+        &> p{
+            text-align: left;
+        }
+    }
+    .titlebtn:hover{
+        border: 1px solid #000;
+        background-color: var(--black);
+        color: #fff;
+    }
+    .liks{
+        border-bottom:1px solid #FFF;
+        padding:22px 0 22px 0;
+    }
+    @media (max-width: 767px) {
+        padding: 30px 5% 0 5%;
+    }
+}
+
+.IconContent{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    flex-wrap: wrap;
+    .iconofcontact{
+        width: 24px;
+        height: 24px;
+    }
+    a{
+        margin: 13px 15px;
+    }
+    span{
+        margin: 13px 15px;
+        height: fit-content;
+        height: 20px;
+    }
+
+    @media (max-width: 767px) {
+        .numberof{
+            width: 100%;
+        }
+    }
+}

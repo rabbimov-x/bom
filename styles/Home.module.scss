@@ -1,0 +1,43 @@
+.home{
+width: 100%;
+height: auto;
+overflow-x: hidden;
+}
+.exclusiveTitle{
+    max-width: 684px;
+    margin: 30px auto;
+}
+
+
+.AfterTitle{
+    width: 100%;
+    margin-top: 10px;
+    padding: 45px 6%;
+    &> h1{
+        width: 80% !important;
+    }
+    @media (max-width: 767px) {
+        padding: 15px 6% 25px 8.5%;
+        &> h1{
+            width: 95% !important;
+        }
+    }
+}
+.AfterTitle h1{
+    width: 50%;
+}
+@media (max-width: 767px) {
+    .exclusiveTitle{
+        width: 100%;
+        padding: 0 5%;
+    } 
+}
+.ServicesTitle{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -4vw;
+    padding:0 5% 0 5%;
+}

@@ -1,0 +1,74 @@
+.Modal {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: rgba(34, 34, 34, 0.671);;
+    position: fixed;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    z-index: 10;
+    
+    @media (max-width: 557px) {
+        padding: 0;
+        background-color: var(--cl-white);
+    }
+    
+    }
+    
+    
+    .Countent {
+    position: relative;
+    width: 40vw;
+    min-width: 330px;
+    height: fit-content;
+    padding: calc(30px + 1vw);
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 1px 2px 3px 0 rgba(0,0,0,.10);
+    z-index: 16;
+        .leave{
+            background-color: rgba(73, 72, 72, 0.308);
+            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+            position: absolute;
+            cursor: pointer;
+            z-index: 11;
+            top: 5px;
+            right: 5px;
+            width: calc( 2vw + 10px);
+            height: calc( 2vw + 10px);
+            border-radius: 50%;
+            &> img{
+                margin-left: .5px;
+                width: 30%;
+                height: 30%;
+            }
+        }
+    
+    }
+    .modalHover{
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 15;
+    }
+    .simple{
+        .Countent{
+            width: 34vw;
+            padding: 0;
+            .leave{
+                // display: none;
+                background-color: #fff;
+            }
+        }
+    }
+    

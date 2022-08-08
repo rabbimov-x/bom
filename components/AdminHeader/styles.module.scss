@@ -1,0 +1,47 @@
+
+.admin__header {
+    width: 100%;
+    padding: calc(2vw + 15px) 4vw;
+    background-color: var(--shade-8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--shade-7);
+    .admin__logo {
+        color: #fff;
+    }
+    .admin__logo b {
+        font-size: 150%;
+        font-weight: 700;
+        text-transform: uppercase;        
+        margin-right: 10px;
+    }
+    .controles{
+        display: none;
+        border: 0;
+        border-radius: 2px;
+        width: 50px;
+        height: 35px;
+        margin-left: 15px;
+        align-items: center;
+        justify-content: center;
+        font-size: var(--size16);
+        font-family: var(--family);
+        background-color: var(--blue);
+        @media (max-width: 767px) {
+            display: flex;
+        }
+    }
+    .open , .close{
+        background-image: url(../../public/assets/images/svg/xx.svg);
+        background-size: 60% 60%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .close{
+        background-image: url(../../public/assets/images/svg/menu.svg) !important;
+    }
+  }
+  
+  
+  

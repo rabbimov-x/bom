@@ -1,0 +1,19 @@
+# User agent *
+User-agent: Googlebot
+Disallow: /nogooglebot/
+Disallow: /qushbegi
+
+User-agent: Yandex
+Disallow: /qushbegi
+Disallow: *?s=
+Disallow: *?p=
+User-agent: Googlebot
+Disallow: /qushbegi
+Disallow: *?s=
+Disallow: *?p=
+User-agent: *
+Disallow: /qushbegi
+Disallow: *?s=
+Disallow: *?p=
+Sitemap: https://carto-go.com/sitemap.xml
+ 

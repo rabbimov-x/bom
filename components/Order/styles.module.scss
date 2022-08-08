@@ -1,0 +1,320 @@
+.SearchContainer {
+  position: relative;
+  background: rgb(34 31 31 / 97%);
+  // background-image: linear-gradient( #fff 50% ,   rgba(26, 26, 26, 0.96) 100% );
+  width: 100%;
+  box-sizing: border-box;
+  padding: calc(4vw + 10px) 10px calc(4vw + 10px) 10px;
+  z-index: 2;
+  .checkbox{
+    padding: 15px 0;
+    top: -5px;
+    position: relative;
+    .check2{
+      margin-right: 15px;
+      @media (max-width: 400px) {
+        margin-left: 0 !important;
+        margin-top: 10px !important;
+      }
+    }
+    
+    .appleSwitch {
+      position: relative;
+      appearance: none; outline: none;
+      width: 50px; height: 30px;
+      background-color: var(--shade-4); border: 1px solid #fff;
+      border-radius: 50px; box-shadow: inset -20px 0 0 0 var(--shade-4);
+      transition-duration: 200ms;
+      @media (max-width: 767px) {
+        width: 40px;
+        height: 25px;
+      }
+    }
+    .appleSwitch:after {
+      content: "";
+      position: absolute;
+      top: 1px; left: 1px;
+      width: 26px; height: 26px;
+      background-color: #fff;
+      border-radius: 50%; box-shadow: 2px 4px 6px rgba(0,0,0,0.2);
+      @media (max-width: 767px) {
+        width: 21px;
+        height: 21px;
+        &:checked{
+          box-shadow: inset 17px 0 0 0 var(--yellow);
+        }
+      }
+    }
+    .appleSwitch:checked {
+      border-color: var(--yellow);
+      box-shadow: inset 20px 0 0 0 var(--yellow);
+    }
+    .appleSwitch:checked:after {
+      top: 0;
+      left: 20px;
+      border: 1px solid #fff;
+      box-shadow: -2px 4px 3px rgba(0,0,0,0.05);
+      @media (max-width: 767px) {
+        left: 17px;
+      }
+    }
+    @media (max-width: 767px) {
+      display: block;
+      input{
+        font-size: var(--size24);
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      .check2{
+        margin-left: 0% !important;
+
+      }
+    }
+    @media (max-width: 576px) {
+      justify-content: left !important;
+      .check2{
+        margin-left: 8% !important;
+
+      }
+    }
+  }
+  .inputCity {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    background-color: #f39313;
+    border-radius: 10px;
+    padding: 10px 0;
+    margin: 10px 0;
+    img {
+      width: 20%;
+    }
+    .email{
+      padding: 10px 0;
+      &> input{
+        &:-webkit-autofill { 
+          -webkit-background-clip: text;
+          background-color: #f39313;
+        }
+        background-color: #f39313;
+        &::placeholder{
+          font-size: var(--size16);
+          color: var(--gray);
+          opacity: 0.7;
+        }
+      }
+      &::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transform: translate(-8px, -50%);
+        z-index: 34;
+        background-image: url(../../public/assets/images/svg/email.svg);
+        background-size: 100% 100%;
+        width: 24px;
+        height: 24px;
+      }
+    }
+    input {
+      width: 100%;
+      border: none;
+      background-color: #f39313;
+      color: var(--black);
+      padding: 0 20px;
+      &::-webkit-calendar-picker-indicator{
+        color: var(--black);
+        // background-color: var(--black);
+        padding: 5px;
+        border-radius: 3px;
+        margin-right: 5px;
+      }
+      &:-webkit-autofill { 
+        -webkit-background-clip: text;
+        background-color: #f39313;
+      }
+    }
+    input:focus,
+    textarea:focus,
+    select:focus {
+      outline: none;
+    }
+
+    @media (min-width: 1200px) {
+      width: 45%;
+
+      input {
+        &::placeholder {
+          font-size: var(--size20);
+        }
+      }
+    }
+  }
+  .emailContent{
+    width: 46.5%;
+    &> div{
+      display: flex;
+      align-items: center;
+    }
+    @media (max-width: 767px) {
+      width: 45%;
+      padding: 5px 0;
+      
+    }
+    @media (max-width: 627px) {
+      width: 100%;
+    }
+    @media (max-width: 576px) {
+      width: 80%;
+      margin: 15px auto 0 auto;
+    }
+  }
+  .dataNow::before{
+    content: "Rent";
+  }
+  .dataEnd::before{
+    content: "Return";
+  }
+  .dataNow , .dataEnd{
+    &:hover::before{
+      display: block;
+    }
+  }
+  .dataNow::before , .dataEnd::before{
+    display: none;
+    position: absolute;
+    top: -25px;
+    left: 40%;
+    margin: 0 auto;
+    font-size: var(--size16);
+    background-color: transparent;
+    color: var(--shade-4);
+    z-index: 5;
+  }
+  @media (max-width:767px) {
+    .dataNow::before{
+      display: block !important;
+      content: "Rent date";
+    }
+    .dataEnd::before{
+      display: block !important;
+      content: "Return date";
+    } 
+  }
+  .inputRow{
+    justify-content: space-between;
+    .inputCity{
+      width: 20%;
+    }
+    @media (max-width: 1000px) {
+      .inputCity{
+        width: 45%;
+        height: auto;
+        .selectALl{
+          &> select{
+            padding-top: 5px;
+            padding-bottom: 5px;
+          }
+        }
+        input{
+          font-size: 17px;
+          padding: 4px 20px;
+        }
+      }
+    }
+    @media (max-width: 576px) {
+      .inputCity{
+        width: 80%;
+        margin: 15px auto;
+      }
+    }
+  }
+  .btnSearch {
+    width: 40%;
+    margin: 30px auto 0 auto;
+    background: #f39313;
+    border-radius: 39px;
+    padding: 20px 90px;
+    font-family: var(--family);
+    font-style: normal;
+    font-weight: bold;
+    font-size: var(--size16);
+    line-height: 20px;
+    color: #292929;
+    border: none;
+    transition: all 0.2s linear;
+    &:hover {
+      box-shadow: 0 0 10px var(--cl-blue);
+    }
+    &:active{
+      transform: scale(0.97 , 0.95);
+    }
+    @media (max-width: 576px) {
+      width: 80%;
+      padding: 17px 60px;
+    }
+  }
+
+  .selectALl {
+    width: 100%;
+    height: 100%;
+
+    &> select{
+      height: 100%;
+      width: 100%;
+      padding: 10px 20px;
+      line-height: 22px;
+      font-size: var(--size16);
+      border: 0;
+      border-radius: 8px;
+      -webkit-appearance: none;
+      appearance: none;
+      background: #f39313;
+      color: var(--black);
+    }
+
+  }
+  .number , .car{
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    &> input{
+      background-color: #f39313;
+      font-family: var(--family);
+      &::placeholder{
+        font-size: var(--size16);
+        color: var(--gray);
+        opacity: 0.7;
+      }
+    }
+    &::before{
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 5%;
+      transform: translate(-8px, -50%);
+      z-index: 34;
+      background-color: #f39313;
+      background-image: url(../../public/assets/images/svg/phone.svg);
+      background-size: 100% 100%;
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .car{
+    &::before{
+      z-index: 34;
+
+      background-image: url(../../public/assets/images/svg/carBlack.svg);
+    }
+  }
+
+}
+.Sreachtop{
+  position: relative;
+  top: -8vw;
+}
+.min{
+  padding: 15px 0 50px 0;
+}

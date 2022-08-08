@@ -1,0 +1,17 @@
+.slider1{
+    width: 100%;
+    z-index: 3;
+    .slick-arrow{
+        display: none;
+    }
+    .slick-dots,.slick-arrow{
+        display: none !important;
+    }
+    
+    
+}
+.Modal{
+    .slick-dots{
+        display: none !important;
+    }
+}

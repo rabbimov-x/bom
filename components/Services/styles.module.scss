@@ -1,0 +1,46 @@
+.services{
+    width: 100%;
+    padding: 0 5%;
+    position: relative;
+    background-color: var(--shade-1);
+
+    .imgContents{
+        margin: 15px 0;
+        position: relative;
+        width: 50%;
+        height: 29vw;
+        vertical-align: middle;
+        text-align: left;
+        display: inline-block;
+        box-sizing: border-box;
+        &> img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .textContainer{
+        right: 0;
+        color: #000;
+        vertical-align: middle;
+        display: inline-block;
+        width: 45%;
+        box-sizing: border-box;
+        padding: 15px 15px;
+        height: 100%;
+        .title{
+            margin-bottom: 15px;
+        }
+        .subtitle{
+           padding-right: 30px;
+           @media (max-width: 767px) {
+             width: 75%;
+           }
+        }
+    }
+    @media (max-width: 767px) {
+        .imgContents{
+            min-height: 45vw;
+        }
+    }
+}

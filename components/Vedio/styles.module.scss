@@ -1,0 +1,9 @@
+.VideoBar{
+    width: 100%;
+    height: auto;
+
+    .video{
+        width: 100%;
+        object-fit: cover;
+    }
+}

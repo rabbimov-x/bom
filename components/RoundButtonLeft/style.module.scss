@@ -1,0 +1,20 @@
+.rounContent {
+        &::before{
+        content: "";
+        width: .9vw;
+        height: .9vw;
+        background-image: url(../../public/assets/images/svg/next.svg);
+        background-size: 100% 100%;
+        }
+        @media (max-width: 992px) {
+    
+    }
+}
+.modelSlickleft{
+    display: flex;
+    @media (max-width: 992px) {
+        display: flex;
+        right: 5%;
+        transform: scale(1.6);
+    }
+}

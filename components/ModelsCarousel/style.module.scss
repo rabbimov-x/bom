@@ -1,0 +1,128 @@
+.modelContent{
+    width: 100%;
+    min-height: 100hv !important;
+    position: relative;
+    top: -5px;
+    
+    .cardHeader{
+        width: 100vw;
+        
+        .models{
+            background-color: transparent;
+            width: 100%;
+            margin: 0 auto 0 auto;
+            z-index: 3;
+            &> div{
+                width: 68%;
+                margin: auto;
+                z-index: 5;
+                top: -60%;
+                position: relative;
+                @media (max-width: 992px) {
+                // width: 80%;
+                }
+            }
+        }
+    }
+    .title{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        text-align: center;
+        z-index: 4;
+    }
+    .modeltop{
+        max-height: 65vh;
+        width: 100vw !important;
+        overflow-x: hidden;
+        
+        &> h3{
+            font-size: var(--size16);
+            letter-spacing: 2px;
+            text-align: center;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+            padding-top: 20px;
+            pointer-events: none;
+            min-height: 44px;
+            position: absolute;
+            top: 26%;
+            left: 50%;
+            transform: translate( -50% , 50%);
+            color: var(--shade-1);
+            
+        }
+        
+        
+        .madalbg{
+            width: 100%;
+           
+            min-height: 50vh;
+            overflow: hidden;
+            position: relative;
+            &::before{
+                content: "";
+                width: 12vw;
+                height: 4.5px;
+                border-radius: 2.5px;
+                position: absolute;
+                top: 37%;
+                left: 49.5%;
+                transform: translate(-50%, -50%);
+                background-color: #fff;
+                @media (max-width: 767px) {
+                    width: 20vw;
+                    top: 47%;
+                }
+            }
+            &> img{
+                position: static;
+                height: 100%;
+            }
+        }
+    }
+    .SliderBottom{
+        width: 100%;
+        position: relative;
+        top: -13.5vw;
+        z-index: 5;
+        
+    }
+    .bgImg{
+        position: relative;
+        top: -25%;
+    }
+    .orderContent{
+        width: 70%;
+        position: relative;
+        top: -12vw;
+        margin: 0px auto;
+        padding: 0px 15px 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        
+        .titlebtn{
+            width: 80%;
+            padding: calc(1vw + 10px ) 36px calc(1vw + 10px) 21px;
+            @media (max-width: 767px) {
+                margin-top: 15px;
+                width: 60%;
+            }
+        }
+        .comment{
+            margin-bottom: 15px;       
+        }
+        @media (max-width: 767px) {
+            width: 100%;
+            padding: 0 5% ;
+        }
+    }
+    .headerbg1{
+        background-size: 100% 30%;
+    }
+    
+    @media (max-width: 767px) {
+        min-height: 70vh;
+    }
+    
+    }

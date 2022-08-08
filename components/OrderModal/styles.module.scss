@@ -1,0 +1,117 @@
+.Modal {
+width: 100%;
+height: 100%;
+background-color: rgba(34, 34, 34, 0.3);;
+position: fixed;
+overflow-y: auto;
+top: 0;
+left: 0;
+justify-content: center;
+z-index: 10;
+
+@media (max-width: 557px) {
+    padding: 0;
+    background-color: var(--cl-white);
+}
+
+}
+
+
+.Countent {
+position: relative;
+background-color: #fff;
+width: 100%;
+height: fit-content;
+min-height: 100vh;
+padding: 15px 0 0px 0;
+    .leave{
+        background-color: #fff;
+        position: absolute;
+        cursor: pointer;
+        z-index: 11;
+        top: 20px;
+        right: 30px;
+        width: calc( 2vw + 30px);
+        height: calc( 2vw + 30px);
+        border-radius: 50%;
+        background-color: rgb(154 150 150 / 10%);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        &> img{
+            margin-left: .5px;
+            width: 30%;
+            height: 30%;
+        }
+    }
+.logoModal{
+    position: absolute;
+    top: 0;
+    left: 10%;
+    transform: translate(-50%);
+    margin: 10px auto;
+    width: 20%;
+    &> img{
+        width: 100%;
+    }
+}
+.img{
+    margin-top: 30px;
+    width: 90%;
+   &> img{
+       width: 100%;
+    }
+}
+.ulMenu{
+    list-style: none;
+    margin: 0;
+    margin-left: -15px;
+    padding: 0px 10px 15px 15px;
+    &> li{
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    margin: 0;
+    color: var(--shade-4);
+    margin-right: 40px;
+    font-family: var(--family);
+    font-weight: 400;
+    font-size: var(--size20);
+    line-height: 145%;
+    cursor: pointer;
+    .Icon{
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        background-color: var(--grayIcon);
+        margin:   0 15px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &> img{
+            width: 55%;
+            height: 55%;
+        }
+    }
+    }
+
+}
+    .number{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0 25px 30px;
+        background-color: rgb(162 154 154);
+        color: var(--shade-3);
+        .iconCenter{
+            margin-left: 30px;
+        }
+        &>img{
+            width: 30px;
+            margin-right: 10px;
+        }
+    }
+    .numberbig{
+        margin-top: 12vh;
+    }
+}
+
